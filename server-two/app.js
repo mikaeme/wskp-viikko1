@@ -7,8 +7,8 @@ app.set('view engine', 'pug');
 
 app.use(express.static('public'));
 app.get('/', (req, res) => {
-  const uiContent={
-    title: 'example',
+  const uiContent = {
+    title: 'Example',
     heading: 'Click on the cat',
   };
   res.render('index', uiContent);
